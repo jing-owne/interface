@@ -1,0 +1,52 @@
+{
+  "创建话题1": {
+    "method": "post",
+    "url": "http://49.233.108.117:3000/api/v1/topics",
+    "data": {
+      "accesstoken":"eb13d528-667a-4111-9905-5df1c08f1b17",
+      "title":"xxxxxxxxxxxxxxxx",
+      "tab":"ask",
+      "content":"xxxxxxxxxxxxxxxxxxxxxxxxx"
+    },
+    "json_schema": {
+      "type": "object",
+        "required": [
+            "success",
+            "topic_id"
+        ],
+        "properties": {
+            "success": {
+                "type": "boolean"
+            },
+            "topic_id": {
+                "type": "string"
+            }
+        }
+    }
+  },
+  "创建话题2": {
+    "method": "post",
+    "url": "http://49.233.108.117:3000/api/v1/topics",
+    "data": {
+      "accesstoken":"eb13d528-667a-4111-9905-5df1c08f1b17",
+      "title":"xxxxxxxxxxxxxxxx",
+      "tab":"ask",
+      "content":"xxxxxxxxxxxxxxxxxxxxxxxxx"
+    },
+    "json_schema": {
+      "type": "object",
+        "required": [
+            "success",
+            "topic_id"
+        ],
+        "properties": {
+            "success": {
+                "type": "boolean"
+            },
+            "topic_id": {
+                "type": "string"
+            }
+        }
+    }
+  }
+}

@@ -1,0 +1,34 @@
+from openpyxl import Workbook
+
+testdata = [
+    {"title":"用户注册1","mothod":"get" , "url" : "https://baidu.com"},
+    {"title": "用户注册2", "mothod": "get", "url": "https://baidu.com"},
+    {"title": "用户注册3", "mothod": "get", "url": "https://baidu.com"},
+    {"title": "用户注册4", "mothod": "get", "url": "https://baidu.com"},
+    {"title": "用户注册5", "mothod": "get", "url": "https://baidu.com"}
+]
+
+# 拿到本地Excel
+wbook = Workbook()
+
+# 获取Excel 的sheet
+wsheet = wbook.create_sheet("userdata",0)
+
+data = {
+    "name":"xiaoming",
+    "passwd":"123456"
+}
+
+
+
+# 获取key
+keys = data.keys()
+for i  in range(len(keys)):
+    wsheet.cell(row=1, column=i+1, value=keys[i])
+# 写入数据
+values = data.values()
+for i in range(len(values)):
+    wsheet.cell(row=2, column=i+1, value=keys[i])
+
+# wsheet.cell(row=4,column=3,value=1)
+wbook.save('./data1.xlsx')

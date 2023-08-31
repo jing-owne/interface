@@ -1,0 +1,24 @@
+{
+  "主题首页": {
+    "method": "get",
+    "url": "http://49.233.108.117:3000/api/v1/topics",
+    "data": {
+      "page": "1",
+      "tab ": "ask",
+      "limit": 3,
+      "mdrender": "false"
+    }
+  },
+
+  "发布话题": {
+    "method": "post",
+    "url": "http://49.233.108.117:3000/api/v1/topics",
+    "data": {
+      "accesstoken":"32f50cd9-f670-48a0-9df6-e614f3a149d4",
+      "title":"hello 2020年10月25日15:29:18",
+      "tab":"ask",
+      "content":"你好，2020年10月25日15:29:10"
+    }
+  }
+
+}
